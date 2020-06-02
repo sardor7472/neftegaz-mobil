@@ -1,0 +1,548 @@
+/* umumiy style */
+
+@font-face {
+  font-family: 'PTSansRegular';
+  src:  url('../fonts/PTSansRegular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSansBold';
+  src:  url('../fonts/PTSansBold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+*:focus{
+  outline: none;
+}
+body{
+  color: #464646;
+  .v-application{
+    font-family: PTSansRegular, sans-serif;
+
+  }
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0!important;
+}
+.v-application a{
+  color: #464646!important;
+  text-decoration: none;
+}
+.v-application p {
+  margin: 0;
+}
+.nf-sime{
+  font-weight: 600;
+}
+.link-color{
+  color: #0092c8;
+}.base-color{
+   color: #ff7c31;
+ }
+.nf-bor-radius{
+  border-radius: 10px;
+}
+.nf-bottom-line{
+  border-bottom: 1px solid #d9d9d9;
+}
+.nf-star{
+  color: red;
+}
+.nf-sime{
+  font-weight: 600;
+}
+.nf-font-size{
+  font-size: 26px;
+}
+/* umumiy style end */
+
+.nf-access{
+  background: url("../images/bg.png") repeat-y;
+  background-position: bottom;
+  height: 100%;
+}
+
+
+
+/* home page start */
+
+.v-application .deep-purple--text.text--accent-4{
+  color: #fff!important;
+}
+.main-calendar-right-btn+.main-calendar-right-btn{
+  margin-top: 20px;
+}
+.main-calendar-right-btn{
+  cursor: pointer;
+  &:hover{
+    background: #00a5e2;
+    color: #fff;
+    svg{
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  margin-top: 30px;
+  span{
+    margin-right: 14px;
+  }
+  svg{
+    path{
+      fill: #c9c9c9;
+    }
+  }
+  display: flex;
+  background: #ffffff;
+  padding: 15px 22px;
+  width: 100%;
+  border-radius: 10px;
+}
+.nf-bg-color{
+  background: #f4f4f4;
+}
+.v-toolbar__title{
+  color: #0092c8;
+}
+.main-calendar-right{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.main-calendar-right-span{
+  font-size: 16px;
+  color: #0092c8;
+}
+.main-calendar-right-title{
+  font-size: 26px;
+  line-height: 1.2;
+}
+/* home page end */
+
+/* appeal page start */
+
+
+.v-input--selection-controls{
+  margin-top: 0;
+}
+.v-input__append-outer {
+  position: absolute;
+  right: -2px;
+  cursor: pointer;
+}
+.v-input__append-outer{
+  border-top: 1px solid #ff7d31;
+  border-right: 1px solid #ff7d31;
+  border-bottom: 1px solid #ff7d31;
+  margin: 0!important;
+  padding: 9px 9px 13px 9px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.appeal-list{
+  li{
+    margin-right: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .active{
+    border-bottom: 1px solid #0092c8;
+      color: #0092c8!important;
+  }
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.appeal-title{
+  font-size: 26px!important;
+}
+
+/* appel page end */
+
+/* related page start */
+.related-table-blog{
+  &-element+&-element{
+    border-top: 1px solid #d9d9d9;
+  }
+  &-element{
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    p{
+      flex: 0 0 50%;
+    }
+  }
+}
+.related-top-blog{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-title{
+    font-size: 26px;
+    color: #0092c8;
+  }
+}
+
+/* related page end */
+
+/* my document page start */
+.my-document-textarea{
+  line-height: 1.2;
+}
+/* my-document page end */
+
+/* uzbekneftegaz-new page start */
+
+.uzbekneftegaz-new-textarea{
+  line-height: 1;
+}
+.nf-uzbekneftegaz-new-border{
+  background: #fff;
+  border: 1px solid #00a5e2!important;
+  color: #00a5e2!important;
+  &.active{
+    color: #fff!important;
+    background: #00a5e2!important;
+  }
+}
+.uzbekneftegaz-new-top-btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.uzbekneftegaz-new-modal-desc{
+  font-size: 16px!important;
+}
+.uzbekneftegaz-new-modal-btn{
+  font-weight: 400!important;
+  font-size: 14px!important;
+}
+.chancellery-send-doc-paragraph{
+  font-size: 18px!important;
+}
+.v-card__title.uzbekneftegaz-new-modal-title{
+    justify-content: center;
+    font-size: 26px!important;
+    font-weight: 400!important;
+}
+.uzbekneftegaz-new-btn{
+  border-radius: 15px;
+  font-size: 14px!important;
+}
+.uzbekneftegaz-new-title{
+  font-size: 24px;
+}
+/* uzbekneftegaz-new page end */
+
+/* received page start */
+
+.received-top-list{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  .active{
+    color: #ff7d31;
+    border-bottom: 1px solid #ff7d31;
+  }
+}
+
+/* received page end */
+
+
+/* profile parol page start */
+
+
+.nf-input-file-blog {
+  padding: 18px !important;
+}
+.nf-input-file-remove{
+  background: #e88124;
+  color: #fff;
+  border-radius: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.nf-input-file-image{
+  width: 200px!important;
+  height: 200px!important;
+  img{
+    transform-origin: -42px 0px!important;
+  }
+}
+.nf-input-file-main{
+  display: block!important;
+  margin: 0 auto;
+  width: 70%;
+}
+
+
+.uzbekneftegaz-profile-assistant-title{
+  font-size: 26px;
+}
+.uzbekneftegaz-profile-assistant-menu{
+  display: flex;
+  justify-content: space-between;
+  .active{
+    a{
+      padding-bottom: 5px;
+      border-bottom: 1px solid #0092c8;
+      color: #0092c8!important;
+    }
+  }
+  li{
+    span{
+      margin-right: 7px;
+    }
+  }
+}
+/* profile parol page end */
+
+
+/* profile page start */
+
+.nf-document-dep-center-list{
+  display: flex;
+  justify-content: space-between;
+  .active{
+    margin-bottom: 0;
+    color: #00a5e2;
+    border-bottom: 1px solid #00a5e2;
+  }
+  li{
+    cursor: pointer;
+    margin-bottom: 1px;
+  }
+}
+.nf-info-top-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li+li{
+    margin-left: 20px;
+  }
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      color: #0092c8;
+      cursor: pointer;
+      span{
+
+        background: #00a5e2;
+      }
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+    svg{
+      path{
+        fill: #a8a8a8;
+      }
+    }
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background: #f4f4f4;
+      border-radius: 50%;
+    }
+  }
+}
+.uzbekneftegaz-profile-assistant-profile-list{
+  li+li{
+    margin-top: 20px;
+  }
+}
+.uzbekneftegaz-profile-assistant-profile-title{
+  font-size: 26px;
+}
+/* profile page end */
+
+
+/* document page end */
+
+
+.ps__thumb-y{
+  background: #00a5e2!important;
+}
+.ps .ps__rail-y {
+  background-color: #eee;
+  opacity: .9;
+}
+
+.nf-control-list{
+  li+li{
+    margin-top: 6px;
+  }
+}
+.nf-document-history{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nf-document-history-time{
+  color: #0092c8;
+  padding-left: 30px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #00a5e2;
+  }
+}
+.nf-document-history-desc{
+  div{
+    padding: 10px 0;
+  }
+  padding-left: 30px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    bottom: -15px;
+    transform: translateY(-50%);
+    border-top: 6px solid #d9d9d9;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background: #d9d9d9;
+  }
+}
+.nf-document-history-temp{
+  font-weight: 600;
+}
+.nf-document-history-message{
+  margin-left: auto;
+  background: #00a5e2;
+  color: #fff;
+  padding: 15px 18px;
+  border-radius: 10px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -11px;
+    border-right: 15px solid #00a5e2;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+}
+.nf-resolution-user{
+  display: flex;
+  &-blog{
+    background: #0092c8;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px;
+  }
+}
+.assistend-otpravet-center-menu{
+  display: flex;
+  li+li{
+    margin-left: 75px;
+  }
+  li{
+    margin-bottom: 1px;
+    cursor: pointer;
+    &.active{
+      border-bottom: 1px solid #0092c8;
+      color: #0092c8;
+    }
+  }
+}
+.assistend-otpravet-center-scrol-item{
+  color: #0092c8;
+}
+//.ps__thumb-y{
+//  height: 25px!important;
+//  background: #00a5e2!important;
+//}
+//.ps .ps__rail-y {
+//  background-color: #eee;
+//  opacity: .9;
+//}
+.assistend-otpravet-center-radio-element{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.uzbekneftegaz-resolution-person{
+  color: #0092c8;
+}
+.uzbekneftegaz-resolution{
+  color: #0092c8;
+  font-weight: 700;
+}
+.nf-document-dep-center-list-item-blog+.nf-document-dep-center-list-item-blog{
+  margin-top: 35px;
+}
+/* document page end */
+
+/* document page end */
+
+
+.nf-document-dep-comonda{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.uzbekneftegaz-resolution-download{
+  color: #0092c8;
+  cursor: pointer;
+}
+.uzbekneftegaz-resolution-right-title{
+  font-weight: 700;
+  color: #0092c8;
+}
+.nf-info-right-list{
+  font-size: 16px;
+  font-weight: 600;
+  li+li{
+    margin-top: 10px;
+  }
+}
+.nf-document-menu-slider{
+  cursor: pointer;
+}
+.nf-document-menu-slider+.nf-document-menu-slider{
+  margin-left: 30px;
+}
+.v-slide-item--active{
+  border-bottom: 1px solid #0092c8;
+  color: #0092c8!important;
+}
+/* document page end */

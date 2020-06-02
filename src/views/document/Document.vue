@@ -1,0 +1,208 @@
+<template xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+    <div class="mt-8">
+        <div class="">
+            <div class="pl-3 pr-3">
+                <div class="related-top-blog">
+                    <p class="related-top-blog-title">Vazifa</p>
+                    <div class="related-top-blog-arrow">
+                        <svg height="17" width="17" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                             viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;"
+                             xml:space="preserve">
+                            <path fill="#0092c8"
+                                  d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="related-table-blog nf-bottom-line mt-2 pb-5">
+                <div class="related-table-blog-element">
+                    <p>Natija</p>
+                    <p>Ma’lumot uchun</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Jo’natuvchi</p>
+                    <p>Ж.Ш.Умурзоқов</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Nazoratchi</p>
+                    <p></p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Yuborish sanasi</p>
+                    <p>2020.01.13 18:40</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Юрист</p>
+                    <p class="link-color nf-sime">Advokatga yuborish</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Punkt raqami</p>
+                    <p>1</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Mazmuni</p>
+                    <p>Ўрнатилган тартибда кўриб чиқиб, маълумот ва ишда
+                        қўллаш учун.
+                    </p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Maqom</p>
+                    <p class="base-color nf-sime">Ish jarayonida</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>Х.А.Рахимов</p>
+                    <p class="link-color">2020.01.14 12:34</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>М.С.Усмонова</p>
+                    <p class="link-color">2020.01.13 19:35</p>
+                </div>
+                <div class="related-table-blog-element">
+                    <p>С.Э.Маллаев</p>
+                    <p class="base-color">O'qilmagan</p>
+                </div>
+            </div>
+        </div>
+        <v-container>
+            <ul class="nf-info-top-list pb-2">
+                <li>
+                    <span class="mr-2">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12"
+                             viewBox="0 0 123.969 123.97" style="enable-background:new 0 0 123.969 123.97;"
+                             xml:space="preserve">
+                            <path d="M96.059,24.603c5.799-5.801,5.699-15.301-0.5-20.9c-5.801-5.3-14.801-4.8-20.301,0.8l-47.4,47.3
+                                c-2.8,2.801-4.2,6.5-4.2,10.2s1.4,7.4,4.2,10.2l47.3,47.3c5.5,5.5,14.6,6.101,20.3,0.8c6.101-5.6,6.3-15.1,0.5-20.899l-30.2-30.3
+                                c-3.9-3.9-3.9-10.2,0-14.101L96.059,24.603z"></path>
+                        </svg>
+                    </span>
+                    <p>Oldingi hujjat</p>
+                </li>
+                <li>
+                    <p>Keyingi hujjat</p>
+                    <span class="ml-2">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12"
+                             viewBox="0 0 123.97 123.97" style="enable-background:new 0 0 123.97 123.97;"
+                             xml:space="preserve">
+                            <path d="M27.961,99.367c-5.8,5.8-5.7,15.3,0.5,20.899c5.8,5.301,14.8,4.801,20.3-0.8l47.3-47.3c2.8-2.8,4.2-6.5,4.2-10.2
+                                s-1.4-7.399-4.2-10.2l-47.2-47.3c-5.5-5.5-14.6-6.1-20.3-0.8c-6.1,5.6-6.3,15.1-0.5,20.9l30.2,30.399c3.9,3.9,3.9,10.2,0,14.101
+                                L27.961,99.367z"></path>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </v-container>
+        <v-divider></v-divider>
+        <div class="pt-2 pb-2">
+            <v-container>
+                <template>
+                    <v-sheet
+                            class="mx-auto"
+                            max-width="100%"
+                    >
+                        <v-slide-group show-arrows>
+                            <v-slide-item
+                                    v-for="link in links"
+                                    :key="link"
+                                    v-slot:default="{ active, toggle }"
+                            >
+                                <span :color="active ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,0)'"
+                                      :input-value="active"
+                                      active-class="active"
+                                      class="nf-document-menu-slider"
+                                      @click="toggle">
+                                {{ link }}
+                                </span>
+                            </v-slide-item>
+                        </v-slide-group>
+                    </v-sheet>
+                </template>
+            </v-container>
+        </div>
+        <v-divider></v-divider>
+        <v-container>
+            <div class="mt-8">
+                <div class="nf-document-dep-center-list">
+                    <div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Ro’yhatga olish jurnali</p>
+                            <p>Приказы</p>
+                        </div>
+                        <div class="nf-document-dep-center-list-item-blog">
+                            <p class="uzbekneftegaz-resolution">Hujjat teglari</p>
+                            <v-chip color="#00a5e2" class="text-uppercase" dark>qo'shish</v-chip>
+                        </div>
+                    </div>
+                </div>
+                <v-layout class="mt-12 pa-2 align-center">
+                    <v-flex row>
+                        <span>
+                            <svg height="25" viewBox="-79 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m353.101562 485.515625h-353.101562v-485.515625h273.65625l79.445312 79.449219zm0 0"
+                                      fill="#e3e4d8"/><path d="m273.65625 0v79.449219h79.445312zm0 0" fill="#d0cebd"/><path
+                                    d="m0 353.101562h353.101562v158.898438h-353.101562zm0 0" fill="#b53438"/><g
+                                    fill="#fff"><path
+                                    d="m52.964844 485.515625c-4.871094 0-8.828125-3.953125-8.828125-8.824219v-88.277344c0-4.875 3.957031-8.828124 8.828125-8.828124 4.875 0 8.828125 3.953124 8.828125 8.828124v88.277344c0 4.871094-3.953125 8.824219-8.828125 8.824219zm0 0"/><path
+                                    d="m300.136719 397.242188h-52.964844c-4.871094 0-8.828125-3.957032-8.828125-8.828126 0-4.875 3.957031-8.828124 8.828125-8.828124h52.964844c4.875 0 8.828125 3.953124 8.828125 8.828124 0 4.871094-3.953125 8.828126-8.828125 8.828126zm0 0"/><path
+                                    d="m300.136719 441.378906h-52.964844c-4.871094 0-8.828125-3.953125-8.828125-8.828125 0-4.871093 3.957031-8.828125 8.828125-8.828125h52.964844c4.875 0 8.828125 3.957032 8.828125 8.828125 0 4.875-3.953125 8.828125-8.828125 8.828125zm0 0"/><path
+                                    d="m247.171875 485.515625c-4.871094 0-8.828125-3.953125-8.828125-8.824219v-88.277344c0-4.875 3.957031-8.828124 8.828125-8.828124 4.875 0 8.828125 3.953124 8.828125 8.828124v88.277344c0 4.871094-3.953125 8.824219-8.828125 8.824219zm0 0"/></g><path
+                                    d="m170.203125 95.136719c-.863281.28125-11.695313 15.261719.847656 27.9375 8.351563-18.371094-.464843-28.054688-.847656-27.9375m5.34375 73.523437c-6.296875 21.496094-14.601563 44.703125-23.527344 65.710938 18.378907-7.042969 38.375-13.195313 57.140625-17.546875-11.871094-13.621094-23.738281-30.632813-33.613281-48.164063m65.710937 57.175782c7.167969 5.445312 8.914063 8.199218 13.613282 8.199218 2.054687 0 7.925781-.085937 10.636718-3.828125 1.316407-1.820312 1.828126-2.984375 2.019532-3.59375-1.074219-.574219-2.515625-1.710937-10.335938-1.710937-4.449218 0-10.027344.191406-15.933594.933594m-119.957031 38.601562c-18.804687 10.425781-26.464843 19-27.011719 23.835938-.089843.804687-.328124 2.90625 3.785157 6.011718 1.316406-.414062 8.96875-3.859375 23.226562-29.847656m-23.421875 44.527344c-3.0625 0-6-.980469-8.507812-2.832032-9.15625-6.796874-10.390625-14.347656-9.808594-19.492187 1.597656-14.132813 19.304688-28.945313 52.648438-44.03125 13.230468-28.636719 25.820312-63.921875 33.324218-93.398437-8.773437-18.871094-17.3125-43.351563-11.097656-57.714844 2.179688-5.03125 4.910156-8.894532 9.976562-10.566406 2.011719-.652344 7.078126-1.480469 8.941407-1.480469 4.617187 0 9.050781 5.507812 11.183593 9.089843 3.972657 6.648438 3.992188 14.390626 3.363282 21.859376-.609375 7.253906-1.84375 14.46875-3.265625 21.601562-1.039063 5.242188-2.214844 10.460938-3.46875 15.660156 11.855469 24.175782 28.644531 48.816406 44.746093 65.683594 11.539063-2.054688 21.460938-3.097656 29.546876-3.097656 13.761718 0 22.121093 3.167968 25.519531 9.691406 2.828125 5.402344 1.660156 11.726562-3.433594 18.769531-4.898437 6.769531-11.640625 10.34375-19.523437 10.34375-10.710938 0-23.15625-6.671875-37.050782-19.851562-24.957031 5.15625-54.097656 14.34375-77.65625 24.515625-7.355468 15.410156-14.398437 27.824218-20.964844 36.933594-8.996093 12.5-16.773437 18.316406-24.472656 18.316406"
+                                    fill="#b53438"/><path
+                                    d="m79.449219 450.207031h-26.484375c-4.871094 0-8.828125-3.953125-8.828125-8.828125v-52.964844c0-4.875 3.957031-8.828124 8.828125-8.828124h26.484375c19.472656 0 35.308593 15.835937 35.308593 35.3125 0 19.472656-15.835937 35.308593-35.308593 35.308593zm-17.65625-17.65625h17.65625c9.734375 0 17.652343-7.917969 17.652343-17.652343 0-9.738282-7.917968-17.65625-17.652343-17.65625h-17.65625zm0 0"
+                                    fill="#fff"/><path
+                                    d="m158.898438 485.515625h-8.828126c-4.875 0-8.828124-3.953125-8.828124-8.824219v-88.277344c0-4.875 3.953124-8.828124 8.828124-8.828124h8.828126c29.199218 0 52.964843 23.753906 52.964843 52.964843 0 29.210938-23.765625 52.964844-52.964843 52.964844zm0-17.652344h.085937zm0-70.621093v70.621093c19.472656 0 35.308593-15.839843 35.308593-35.3125 0-19.472656-15.835937-35.308593-35.308593-35.308593zm0 0"
+                                    fill="#fff"/>
+                            </svg>
+                        </span>
+                        <span class="ml-1">ПРИКАЗ № 13.PDF (2 MB)</span>
+                    </v-flex>
+                    <v-flex>
+                        <span class="uzbekneftegaz-resolution-download">Yuklab olish</span>
+                    </v-flex>
+                </v-layout>
+                <p class="mt-8">
+                    ПРИКАЗ - №13 от 13.01.2020г. - О дополнительных мерах по бесперебойному
+                    обеспечению потребителей нефтепродуктами
+                </p>
+                <p class="uzbekneftegaz-resolution-person mt-12 ">
+                    Н.К.Шамсидинова
+                </p>
+            </div>
+        </v-container>
+    </div>
+</template>
+<script>
+    export default {
+        data: () => ({
+            links: ['Hujjat', 'Yuborish', 'Topshiriqlar tarixi', 'Ijro qadamlari','Nazorat punktlari', 'Bog‘liq hujjatlar'],
+        }),
+    };
+</script>
