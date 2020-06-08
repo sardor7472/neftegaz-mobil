@@ -23,7 +23,8 @@
             <div class="left-bar-select-blog">
                 <div class="left-bar-select">
                     <v-select
-                            color="#000"
+                            dark
+                            color="#fff"
                             class="side-bar-select"
                             :items="langs"
                             :label="$i18n.locale"
@@ -34,7 +35,8 @@
                 </div>
                 <div class="left-bar-select">
                     <v-select
-                            color="#000"
+                            dark
+                            color="#fff"
                             class="side-bar-select"
                             :items="years"
                             label="2020"
@@ -193,12 +195,18 @@
         },
         methods: {
             setLocale(locale) {
-                this.$i18n.locale = locale;
+                localStorage.setItem('lang', locale)
+                console.log(locale)
             },
             sidebarChangeView() {
                 this.options.model = !this.options.model;
             }
-        }
+        },
+        watch: {
+            '$i18n.locale' (val) {
+                this.setLocale(val)
+            }
+        },
     };
 </script>
 <style scoped lang="scss">

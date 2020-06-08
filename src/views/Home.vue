@@ -68,9 +68,31 @@
                                                         :items="desserts"
                                                         :items-per-page="5"
                                                         class="elevation-1 nf-calendar-table"
-                                                ></v-data-table>
+                                                        hide-default-footer
+                                                >
+                                                    <template v-slot:item="{ item }">
+                                                        <tr
+                                                                :key="item.id"
+                                                                @click="$router.push({name: 'chancellery-jurnal', params: {cardId: item.id}})"
+                                                                class="tr-class">
+                                                            <td>{{ item.id }}</td>
+                                                            <td>{{ item.name }}</td>
+                                                            <td>
+                                                                {{ item.calories }}
+                                                            </td>
+                                                        </tr>
+                                                    </template>
+                                                </v-data-table>
                                             </template>
-
+                                            <template>
+                                                <div class="text-center">
+                                                    <v-pagination
+                                                            v-model="page"
+                                                            :length="6"
+                                                            class="mt-5"
+                                                    ></v-pagination>
+                                                </div>
+                                            </template>
 
                                         </v-card-text>
                                         <v-card-actions>
@@ -130,16 +152,16 @@
                     </button>
                     <button type="button" class="main-calendar-right-btn">
                         <span>
-                            <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path data-v-47182f1e="" fill="#fff" d="M527.1,280.8h164.4c24.2,0,36.5-26.8,19.5-42.6L463.6,7.6c-17.1-16-46.9-4.9-46.9,17.5v154.8    C416.7,235.5,466.2,280.8,527.1,280.8z M527.1,330.8c-91,0-165.1-67.7-165.1-151c0-168.8-1.6-163.4,4.7-179.8H176.5    C127.7,0.1,88,36.4,88,81v638.1c0,44.7,39.7,81,88.5,81h453.8c48.8,0,88.5-36.3,88.5-81V326.6    C700.9,332.3,707.8,330.8,527.1,330.8z"></path></svg>
+                            <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path fill="#fff" d="M527.1,280.8h164.4c24.2,0,36.5-26.8,19.5-42.6L463.6,7.6c-17.1-16-46.9-4.9-46.9,17.5v154.8    C416.7,235.5,466.2,280.8,527.1,280.8z M527.1,330.8c-91,0-165.1-67.7-165.1-151c0-168.8-1.6-163.4,4.7-179.8H176.5    C127.7,0.1,88,36.4,88,81v638.1c0,44.7,39.7,81,88.5,81h453.8c48.8,0,88.5-36.3,88.5-81V326.6    C700.9,332.3,707.8,330.8,527.1,330.8z"></path></svg>
                         </span>
                         <p>Mening bo’limim hujjatlari</p>
                     </button>
                     <button type="button" class="main-calendar-right-btn">
-                        <span><svg data-v-47182f1e="" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path data-v-47182f1e="" fill="#fff" d="M741,527.2c-32.6,0-59.1,26.2-59.1,58.5V677H118.7v-91.2c0-32.3-26.4-58.5-59.1-58.5    c-32.6,0-59.1,26.2-59.1,58.5v149.7C0.5,767.8,27,794,59.6,794H741c32.6,0,59.1-26.2,59.1-58.5V585.7    C800,553.4,773.6,527.2,741,527.2z M382.5,589.5c9.8,9.7,25.8,9.7,35.7,0l207-205.1c6-6,7.8-15,4.6-22.8    c-3.3-7.8-10.9-12.9-19.5-12.9H513V53.1c0-25.2-20.6-45.7-46.1-45.7H333.7c-25.5,0-46.1,20.4-46.1,45.7v295.6h-97.2    c-8.5,0-16.2,5.1-19.5,12.9c-3.3,7.8-1.5,16.8,4.5,22.8L382.5,589.5z"></path></svg></span>
+                        <span><svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path fill="#fff" d="M741,527.2c-32.6,0-59.1,26.2-59.1,58.5V677H118.7v-91.2c0-32.3-26.4-58.5-59.1-58.5    c-32.6,0-59.1,26.2-59.1,58.5v149.7C0.5,767.8,27,794,59.6,794H741c32.6,0,59.1-26.2,59.1-58.5V585.7    C800,553.4,773.6,527.2,741,527.2z M382.5,589.5c9.8,9.7,25.8,9.7,35.7,0l207-205.1c6-6,7.8-15,4.6-22.8    c-3.3-7.8-10.9-12.9-19.5-12.9H513V53.1c0-25.2-20.6-45.7-46.1-45.7H333.7c-25.5,0-46.1,20.4-46.1,45.7v295.6h-97.2    c-8.5,0-16.2,5.1-19.5,12.9c-3.3,7.8-1.5,16.8,4.5,22.8L382.5,589.5z"></path></svg></span>
                         <p>Kelib tushgan</p>
                     </button>
                     <button type="button" class="main-calendar-right-btn">
-                        <span><svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path data-v-47182f1e="" fill="#fff" d="M740.3,527.3c-32.6,0-59.1,26.2-59.1,58.5V677h-563v-91.2c0-32.3-26.4-58.5-59-58.5    c-32.6,0-59.1,26.2-59.1,58.5v149.7c0,32.3,26.4,58.5,59.1,58.5h681.1c32.6,0,59-26.2,59-58.5V585.8    C799.4,553.5,772.9,527.3,740.3,527.3z M189.9,251.9h97.2v290.3c0,24.8,20.6,44.9,46.1,44.9h133.2c25.5,0,46.1-20.1,46.1-44.9    V251.9h97.2c8.5,0,16.2-5,19.5-12.7c3.3-7.7,1.5-16.5-4.6-22.4l-207-201.5c-9.8-9.6-25.8-9.6-35.6,0L175,216.9    c-6,5.9-7.8,14.7-4.5,22.4C173.7,246.9,181.4,251.9,189.9,251.9z"></path></svg></span>
+                        <span><svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve" class="left-bar-icon"><path fill="#fff" d="M740.3,527.3c-32.6,0-59.1,26.2-59.1,58.5V677h-563v-91.2c0-32.3-26.4-58.5-59-58.5    c-32.6,0-59.1,26.2-59.1,58.5v149.7c0,32.3,26.4,58.5,59.1,58.5h681.1c32.6,0,59-26.2,59-58.5V585.8    C799.4,553.5,772.9,527.3,740.3,527.3z M189.9,251.9h97.2v290.3c0,24.8,20.6,44.9,46.1,44.9h133.2c25.5,0,46.1-20.1,46.1-44.9    V251.9h97.2c8.5,0,16.2-5,19.5-12.7c3.3-7.7,1.5-16.5-4.6-22.4l-207-201.5c-9.8-9.6-25.8-9.6-35.6,0L175,216.9    c-6,5.9-7.8,14.7-4.5,22.4C173.7,246.9,181.4,251.9,189.9,251.9z"></path></svg></span>
                         <p>Murojaat</p>
                     </button>
                 </div>
@@ -151,9 +173,9 @@
 <script>
     export default {
         data: () => ({
+            page: 1,
             focus: '',
             type: 'month',
-
             start: null,
             end: null,
             selectedEvent: {},
@@ -172,35 +194,19 @@
                     sortable: false,
                     value: 'name',
                 },
-                { text: 'temp', value: 'calories' },
-                { text: 'Fat (g)', value: 'fat' },
-                { text: 'Carbs (g)', value: 'carbs' },
-                { text: 'Protein (g)', value: 'protein' },
-                { text: 'Iron (%)', value: 'iron' },
-                { text: 'Iron (%)', value: 'iron' },
+                {text: 'temp', value: 'calories'},
             ],
             desserts: [
                 {
                     id: '1',
                     name: 'Frozen Yogurt',
                     calories: 159,
-                    fat: 6.0,
-                    carbs: 24,
-                    protein: 4.0,
-                    iron: '1%',
-
                 },
                 {
                     id: '2',
                     name: 'Frozen Yogurt',
                     calories: 159,
-                    fat: 6.0,
-                    carbs: 24,
-                    protein: 4.0,
-                    iron: '1%',
                 },
-
-
             ],
         }),
         computed: {
@@ -271,7 +277,6 @@
                 } else {
                     open()
                 }
-
                 nativeEvent.stopPropagation()
             },
             updateRange({start, end}) {

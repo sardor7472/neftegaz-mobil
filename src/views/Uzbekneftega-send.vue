@@ -251,6 +251,7 @@
                     :items="desserts"
                     :items-per-page="5"
                     class="elevation-1 nf-calendar-table"
+                    hide-default-footer
             >
                 <template v-slot:item="{ item }">
                     <tr
@@ -266,11 +267,21 @@
                 </template>
             </v-data-table>
         </template>
+        <template>
+            <div class="text-center">
+                <v-pagination
+                        v-model="page"
+                        :length="6"
+                        class="mt-5"
+                ></v-pagination>
+            </div>
+        </template>
     </v-container>
 </template>
 <script>
     export default {
         data: () => ({
+            page: 1,
             items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
             radios: 'radio-1',
             headers: [

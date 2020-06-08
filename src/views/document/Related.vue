@@ -425,10 +425,4 @@
     };
 </script>
 <style scoped>
-    .scroll-area{
-        position: relative;
-        margin: auto;
-        width: 100%;
-        height: 150px;
-    }
 </style>

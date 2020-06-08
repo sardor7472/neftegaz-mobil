@@ -23,7 +23,7 @@
                             Barcha
                         </v-badge>
                     </router-link>
-                    <router-link tag="li" to="/appeal" active-class="active" >Ish jarayonida</router-link>
+                    <router-link tag="li" to="/appeal" active-class="active">Ish jarayonida</router-link>
                     <router-link tag="li" to="#" active-class="active">Muddati o‘tgan</router-link>
                     <router-link tag="li" to="#" active-class="active">Bajarildi</router-link>
                     <router-link tag="li" to="#" active-class="active">Muddati o‘tib ijro qilingan</router-link>
@@ -60,15 +60,15 @@
                 </v-radio-group>
             </div>
         </div>
-       <div>
-           <v-text-field
-                   outlined
-                   dense
-                   label="Qisqa mazmuni"
-                   class="nf-bor-radius per-input-element mt-1">
+        <div>
+            <v-text-field
+                    outlined
+                    dense
+                    label="Qisqa mazmuni"
+                    class="nf-bor-radius per-input-element mt-1">
 
-           </v-text-field>
-       </div>
+            </v-text-field>
+        </div>
         <div>
             <v-autocomplete
                     outlined
@@ -121,6 +121,7 @@
                     :items="desserts"
                     :items-per-page="5"
                     class="elevation-1 nf-calendar-table"
+                    hide-default-footer
             >
                 <template v-slot:item="{ item }">
                     <tr
@@ -134,15 +135,26 @@
                         </td>
                     </tr>
                 </template>
+
             </v-data-table>
+        </template>
+        <template>
+            <div class="text-center">
+                <v-pagination
+                        v-model="page"
+                        :length="6"
+                        class="mt-5"
+                ></v-pagination>
+            </div>
         </template>
     </v-container>
 </template>
 <script>
     import Search from '../components/search'
-    export default {
 
+    export default {
         data: () => ({
+            page: 1,
             items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
             radios: 'radio-1',
             headers: [
